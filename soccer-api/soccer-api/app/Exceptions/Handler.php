@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Dotenv\Exception\ValidationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
@@ -47,4 +48,18 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    private function handleExceptions($e)
+    {
+       // Add anywhere in this method the following code
+       // It does what the FormValidator does.
+
+        if($e instanceof ValidationException) {
+
+            return redirect()->back()->withErrors($e->validator->getMessageBag()->toArray());
+        }
+
+        return response()->view('errors.500', [], 500);
+    }
+
 }

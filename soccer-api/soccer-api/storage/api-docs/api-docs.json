@@ -1,0 +1,284 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Soccer api documentation",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/player": {
+            "get": {
+                "tags": [
+                    "Player"
+                ],
+                "summary": "Display a listing of the player.",
+                "description": " ",
+                "operationId": "276998b34fdbd8a67e957a7fb4fa25a9",
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Player"
+                ],
+                "summary": "Store a newly created resource in storage.",
+                "description": " ",
+                "operationId": "287a67768b206bd753d4b762bc2876a5",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "nationality": {
+                                        "type": "string"
+                                    },
+                                    "date_of_birth": {
+                                        "type": "string"
+                                    },
+                                    "position": {
+                                        "type": "string",
+                                        "enum": [
+                                            "Forward",
+                                            "Midfielder",
+                                            "Defender",
+                                            "Goalkeeper"
+                                        ]
+                                    },
+                                    "detail_position": {
+                                        "type": "string"
+                                    },
+                                    "squad_number": {
+                                        "type": "number"
+                                    },
+                                    "id_team": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Welcome page",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/player/{id}": {
+            "get": {
+                "tags": [
+                    "Player"
+                ],
+                "summary": "Display the specified resource.",
+                "description": " ",
+                "operationId": "6e4fb040096f752c7717bdad8945b877",
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Player"
+                ],
+                "summary": "Update the specified resource in storage.",
+                "description": " ",
+                "operationId": "2bee51cc75979ae669cc1b18558f0986",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id of player",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "nationality": {
+                                        "type": "string"
+                                    },
+                                    "date_of_birth": {
+                                        "type": "string"
+                                    },
+                                    "position": {
+                                        "type": "string"
+                                    },
+                                    "detail_position": {
+                                        "type": "string"
+                                    },
+                                    "squad_number": {
+                                        "type": "number"
+                                    },
+                                    "id_team": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Player"
+                ],
+                "summary": "Remove the specified resource from storage.",
+                "description": " ",
+                "operationId": "001c2e8c0464a4c2d6df95d359fb79bb",
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            }
+        },
+        "/api/team": {
+            "get": {
+                "tags": [
+                    "Team"
+                ],
+                "description": "Home page",
+                "operationId": "8552dd0225e6b98cfd20200cff987939",
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Team"
+                ],
+                "summary": "Store a newly created resource in storage.",
+                "description": "Home page",
+                "operationId": "6b4e1174a273f5efad722dcf5f1b87a0",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "short_name": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "stadium": {
+                                        "type": "string"
+                                    },
+                                    "coach": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            }
+        },
+        "/api/team/{id}": {
+            "get": {
+                "tags": [
+                    "Team"
+                ],
+                "summary": "Display the specified resource.",
+                "description": "Home page",
+                "operationId": "71327544c30baa9706be0707cfeb2459",
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Team"
+                ],
+                "summary": "Update the specified resource in storage.",
+                "description": "Home page",
+                "operationId": "34f1b0b7bcf7e6fa7bb79ef52c432cef",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "short_name": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "stadium": {
+                                        "type": "string"
+                                    },
+                                    "coach": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Team"
+                ],
+                "summary": "Remove the specified resource from storage.",
+                "description": "Home page",
+                "operationId": "f43d1ce16fdadfe79ca89a68976ff1ab",
+                "responses": {
+                    "204": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}
