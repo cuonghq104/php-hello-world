@@ -24,18 +24,28 @@ class PlayerCreateRequest extends FormRequest
     public function rules()
     {
 
-        dd($this->request);
+        if (
+            is_array($this->request->all())
+            && count($this->request->all()) > 0
+            && is_array($this->request->all()[0])
+        ) {
+            return [
+                '*.name' => 'required', 
+                '*.nationality' => 'required',
+                '*.position' => 'required|in:Attack,Midfield,Defender,Goalkeeper'
+            ];
+        }
         return [
             'name' => 'required',
             'nationality' => 'required',
-            'position' => 'required|in:Forward,Midfielder,Defender,Goalkeeper'
+            'position' => 'required|in:Attack,Midfield,Defender,Goalkeeper'
         ];
     }
 
     public function messages()
     {
         return [
-            'position.in' => 'Position must be one of these: Forward, Midfielder, Defender, Goalkeeper'
+            'position.in' => 'Position must be one of these: Attack, Midfield, Defender, Goalkeeper'
         ];
     }
 }

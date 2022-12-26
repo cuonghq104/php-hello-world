@@ -5,6 +5,70 @@
         "version": "0.1"
     },
     "paths": {
+        "/api/game_match": {
+            "post": {
+                "tags": [
+                    "Game Match"
+                ],
+                "summary": "Store a newly created resource in storage.",
+                "description": "Game match",
+                "operationId": "4fdda1e7175eca4108c4c2af835dcbaa",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id_home": {
+                                        "type": "integer"
+                                    },
+                                    "id_away": {
+                                        "type": "integer"
+                                    },
+                                    "start_time": {
+                                        "type": "string"
+                                    },
+                                    "stadium": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Game match create response"
+                    }
+                }
+            }
+        },
+        "/api/game_match/{id}": {
+            "get": {
+                "tags": [
+                    "Game Match"
+                ],
+                "summary": "Display the specified resource.",
+                "description": " ",
+                "operationId": "91ea3a155ed47a17df946c0d997f8bf9",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id of game match",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            }
+        },
         "/api/player": {
             "get": {
                 "tags": [
@@ -84,6 +148,17 @@
                 "summary": "Display the specified resource.",
                 "description": " ",
                 "operationId": "6e4fb040096f752c7717bdad8945b877",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id of player",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "default": {
                         "description": "Welcome page"

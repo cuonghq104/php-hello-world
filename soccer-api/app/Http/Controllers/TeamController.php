@@ -98,7 +98,7 @@ class TeamController extends Controller
     {
         //
         $data = Team::query()->findOrFail($id);
-        return response()->json($data);
+        return response()->json($data->matches());
     }
 
     /**

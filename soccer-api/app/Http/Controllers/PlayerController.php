@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\PlayerCreateRequest;
 use App\Models\Player;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class PlayerController extends Controller
 {
@@ -29,7 +30,7 @@ class PlayerController extends Controller
     public function index(Request $request)
     {
         $query = Player::query();
-        $query->select(['name', 'nationality', 'date_of_birth', 'position', 'detail_position', 'squad_number', 'id_team']);
+        $query->select(['id', 'name', 'nationality', 'date_of_birth', 'position', 'detail_position', 'squad_number', 'id_team']);
         if ($search = $request->search) {
             $query->where('name', 'like', $search . '%');
         }
@@ -90,9 +91,18 @@ class PlayerController extends Controller
      */
     public function store(PlayerCreateRequest $request)
     {
-        $data = $request->only(['name', 'nationality', 'date_of_birth', 'position', 'detail_position', 'squad_number', 'id_team']);
-        $player = Player::query()->insert($data);
-        return $this->createSuccess($player);
+        if (is_array($request->all()) && count($request->all()) > 0 && is_array($request->all()[0])) {
+            $results = [];
+            foreach ($request->all() as $value) {
+                $player = Player::query()->create($value);
+                array_push($results, $player);
+            }
+            return $this->createSuccess($results);
+        } else {
+            $data = $request->only(['name', 'nationality', 'date_of_birth', 'position', 'detail_position', 'squad_number', 'id_team']);
+            $player = Player::query()->create($data);
+            return $this->createSuccess($player);
+        }   
     }
 
     /**
@@ -104,6 +114,9 @@ class PlayerController extends Controller
      *     tags={"Player"},
      *     path="/api/player/{id}",
      *     description=" ",
+     *     @OA\Parameter(name="id", in="path", description="Id of player", required=true,
+     *        @OA\Schema(type="string")
+     *     ),
      *     @OA\Response(response="default", description="Welcome page")
      * )
      */
