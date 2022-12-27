@@ -15,6 +15,7 @@ class GameMatchController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**
@@ -57,7 +58,7 @@ class GameMatchController extends Controller
         $data = $request->only(['id_home', 'id_away', 'start_time', 'stadium']);
         $data["status"] = "not_started";
         $game_match = GameMatch::query()->create($data);
-        return $this->createSuccess($game_match->homeTeam());
+        return $this->createSuccess($game_match);
     }
 
     /**
