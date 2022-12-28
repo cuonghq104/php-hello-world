@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Data\Repositories\GameMatchRepositoryInterface;
+use App\Repositories\GameMatchRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -15,6 +17,10 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         $this->app->register(\L5Swagger\L5SwaggerServiceProvider::class);
+        $this->app->singleton(
+            GameMatchRepositoryInterface::class,
+            GameMatchRepository::class
+        );
     }
 
     /**

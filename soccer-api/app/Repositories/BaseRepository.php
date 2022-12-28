@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use app\Contracts\Repositories\BaseRepositoryInterface;
+use App\Data\Repositories\BaseRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -27,17 +27,17 @@ abstract class BaseRepository implements BaseRepositoryInterface
         return $this->eloquentBuilder()->getQuery();
     }
 
-    public function find(int $id, $col = ["*"])
+    public function find(int $id, $col = ["*"]): Builder|Collection|Model|null
     {
         return $this->eloquentBuilder()->find($id, $col);
     }
 
-    public function findOrFail(int $id, $col = ["*"])
+    public function findOrFail(int $id, $col = ["*"]): Builder|Collection|Model|null
     {
         return $this->eloquentBuilder()->findOrFail($id, $col);
     }
 
-    public function create(array|Collection $data)
+    public function create(array|Collection $data): Model|Builder|array
     {
         if (is_array($data->all()) && count($data->all()) > 0 && is_array($data->all()[0])) {
             $results = [];

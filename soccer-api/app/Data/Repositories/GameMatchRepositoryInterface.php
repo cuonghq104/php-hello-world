@@ -1,7 +1,6 @@
 <?php
+namespace App\Data\Repositories;
 
-use app\Contracts\Repositories\BaseRepositoryInteface;
-
-interface GameMatchRepositoryInterface extends BaseRepositoryInteface {
-    
+interface GameMatchRepositoryInterface extends BaseRepositoryInterface {
+    function gameMatchDetailData(int $id, $col = ["*"]);
 }

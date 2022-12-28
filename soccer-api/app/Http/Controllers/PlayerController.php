@@ -29,18 +29,16 @@ class PlayerController extends Controller
      */
     public function index(Request $request)
     {
-        $query = Player::query();
+        $query = Player::query()->searchByName($request);
         $query->select(['id', 'name', 'nationality', 'date_of_birth', 'position', 'detail_position', 'squad_number', 'id_team']);
-        if ($search = $request->search) {
-            $query->where('name', 'like', $search . '%');
-        }
 
-        if ($team = $request->team) {
+        if ($team = $request->team_id) {
             $query->where('id_team', $team);
         }
 
-        $per_page = $request->per_page ?? 50;
+        $per_page = $request->per_page ?: 50;
         $players = $query->simplePaginate($per_page);
+
         return $this->sendResponse($players);
     }
 
@@ -102,7 +100,7 @@ class PlayerController extends Controller
             $data = $request->only(['name', 'nationality', 'date_of_birth', 'position', 'detail_position', 'squad_number', 'id_team']);
             $player = Player::query()->create($data);
             return $this->createSuccess($player);
-        }   
+        }
     }
 
     /**

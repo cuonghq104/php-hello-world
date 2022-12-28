@@ -6,6 +6,30 @@
     },
     "paths": {
         "/api/game_match": {
+            "get": {
+                "tags": [
+                    "Game Match"
+                ],
+                "summary": "Display a listing of the resource.",
+                "description": " ",
+                "operationId": "3979358648dbb332168790d45ba65205",
+                "parameters": [
+                    {
+                        "name": "team_id",
+                        "in": "query",
+                        "description": "Id of team",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
             "post": {
                 "tags": [
                     "Game Match"
