@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GameMatchController;
+use App\Http\Controllers\PlayerMatchController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\PlayerController;
 use Illuminate\Http\Request;
@@ -31,3 +32,4 @@ Route::apiResource('team', TeamController::class);
 Route::apiResource('player', PlayerController::class);
 
 Route::apiResource('game_match', GameMatchController::class);
+Route::post('player-match', [PlayerMatchController::class, 'store']);

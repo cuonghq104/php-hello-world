@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Data\Repositories\GameMatchRepositoryInterface;
+use App\Models\GameMatch;
+use App\Observers\GameMatchObserver;
 use App\Repositories\GameMatchRepository;
 use Illuminate\Support\ServiceProvider;
 
@@ -31,5 +33,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        GameMatch::observe(GameMatchObserver::class);
     }
 }

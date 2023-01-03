@@ -33,7 +33,7 @@ class GameMatchController extends Controller
         //
         $query = $this->gameMatchRepository
             ->eloquentBuilder()
-            ->with(['home_team:id,name,city', 'away_team:id,name,city']);
+            ->with(['home_team:id,name,city', 'away_team:id,name,city', 'home_stats:id,id_team,id_match,goal_scored', 'away_stats:id,id_team,id_match,goal_scored']);
 
         if ($team = $request->team_id) {
             $query->where('id_home', '=', $team)
@@ -83,7 +83,7 @@ class GameMatchController extends Controller
     {
         $data = $request->only(['id_home', 'id_away', 'start_time', 'stadium']);
         $data["status"] = "not_started";
-        $game_match = GameMatch::query()->create($data);
+        $game_match = $this->gameMatchRepository->create($data);
         return $this->createSuccess($game_match);
     }
 

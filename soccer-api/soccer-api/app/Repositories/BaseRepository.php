@@ -39,16 +39,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
 
     public function create(array|Collection $data): Model|Builder|array
     {
-        if (is_array($data->all()) && count($data->all()) > 0 && is_array($data->all()[0])) {
-            $results = [];
-            foreach ($data->all() as $value) {
-                $player = $this->eloquentBuilder()->create($data);;
-                $results[] = $player;
-            }
-            return $results;
-        } else {
-            return $this->eloquentBuilder()->create($data);
-        }
+        return $this->eloquentBuilder()->create($data);
     }
 
     public function update($id, $data)

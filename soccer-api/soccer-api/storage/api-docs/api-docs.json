@@ -259,6 +259,44 @@
                 }
             }
         },
+        "/api/player-match": {
+            "post": {
+                "tags": [
+                    "Player Match"
+                ],
+                "summary": "Store a newly created resource in storage.",
+                "description": "Player match",
+                "operationId": "7a6853c6a44715c1f785ffb525ffceea",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id_player": {
+                                        "type": "integer"
+                                    },
+                                    "id_team_match": {
+                                        "type": "integer"
+                                    },
+                                    "is_sub": {
+                                        "type": "integer"
+                                    },
+                                    "position": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Player match create response"
+                    }
+                }
+            }
+        },
         "/api/team": {
             "get": {
                 "tags": [

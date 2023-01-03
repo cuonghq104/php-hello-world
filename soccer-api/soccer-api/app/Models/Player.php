@@ -10,4 +10,5 @@ class Player extends BaseModel
     use HasFactory;
 
     protected $fillable = ['name', 'nationality', 'date_of_birth', 'position', 'detail_position', 'squad_number', 'id_team'];
+
 }
