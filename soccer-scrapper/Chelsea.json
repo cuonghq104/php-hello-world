@@ -1,0 +1,227 @@
+[
+  {
+    "squad_number": 16,
+    "name": "Edouard Mendy",
+    "nationality": "Senegal",
+    "date_of_birth": "1992-03-01",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 1
+  },
+  {
+    "squad_number": 1,
+    "name": "Kepa Arrizabalaga",
+    "nationality": "Spain",
+    "date_of_birth": "1994-10-03",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 1
+  },
+  {
+    "squad_number": 13,
+    "name": "Marcus Bettinelli",
+    "nationality": "England",
+    "date_of_birth": "1992-05-24",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 1
+  },
+  {
+    "squad_number": 33,
+    "name": "Wesley Fofana",
+    "nationality": "France",
+    "date_of_birth": "2000-12-17",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 26,
+    "name": "Kalidou Koulibaly",
+    "nationality": "Senegal",
+    "date_of_birth": "1991-06-20",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 14,
+    "name": "Trevoh Chalobah",
+    "nationality": "England",
+    "date_of_birth": "1999-07-05",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 6,
+    "name": "Thiago Silva",
+    "nationality": "Brazil",
+    "date_of_birth": "1984-09-22",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 32,
+    "name": "Marc Cucurella",
+    "nationality": "Spain",
+    "date_of_birth": "1998-07-22",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 21,
+    "name": "Ben Chilwell",
+    "nationality": "England",
+    "date_of_birth": "1996-12-21",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 24,
+    "name": "Reece James",
+    "nationality": "England",
+    "date_of_birth": "1999-12-08",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 28,
+    "name": "Cesar Azpilicueta",
+    "nationality": "Spain",
+    "date_of_birth": "1989-08-28",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 5,
+    "name": "Jorginho",
+    "nationality": "Italy",
+    "date_of_birth": "1991-12-20",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 7,
+    "name": "N'Golo Kante",
+    "nationality": "France",
+    "date_of_birth": "1991-03-29",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 20,
+    "name": "Denis Zakaria",
+    "nationality": "Switzerland",
+    "date_of_birth": "1996-11-20",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 8,
+    "name": "Mateo Kovacic",
+    "nationality": "Croatia",
+    "date_of_birth": "1994-05-06",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 23,
+    "name": "Conor Gallagher",
+    "nationality": "England",
+    "date_of_birth": "2000-02-06",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 12,
+    "name": "Ruben Loftus-Cheek",
+    "nationality": "England",
+    "date_of_birth": "1996-01-23",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 30,
+    "name": "Carney Chukwuemeka",
+    "nationality": "England",
+    "date_of_birth": "2003-10-20",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 19,
+    "name": "Mason Mount",
+    "nationality": "England",
+    "date_of_birth": "1999-01-10",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 29,
+    "name": "Kai Havertz",
+    "nationality": "Germany",
+    "date_of_birth": "1999-06-11",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 22,
+    "name": "Hakim Ziyech",
+    "nationality": "Morocco",
+    "date_of_birth": "1993-03-19",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 17,
+    "name": "Raheem Sterling",
+    "nationality": "England",
+    "date_of_birth": "1994-12-08",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 1
+  },
+  {
+    "squad_number": 10,
+    "name": "Christian Pulisic",
+    "nationality": "United States",
+    "date_of_birth": "1998-09-18",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 1
+  },
+  {
+    "squad_number": 18,
+    "name": "Armando Broja",
+    "nationality": "Albania",
+    "date_of_birth": "2001-09-10",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 1
+  },
+  {
+    "squad_number": 9,
+    "name": "Pierre-Emerick Aubameyang",
+    "nationality": "Gabon",
+    "date_of_birth": "1989-06-18",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 1
+  }
+]

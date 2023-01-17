@@ -1,0 +1,1 @@
+[{"squad_number":14,"name":"Aymeric Laporte","nationality":"Spain","date_of_birth":"May 27, 1994","position":"Defender","detail_position":"CB"},{"squad_number":5,"name":"John Stones","nationality":"England","date_of_birth":"May 28, 1994","position":"Defender","detail_position":"CB"}]

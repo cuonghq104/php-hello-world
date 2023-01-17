@@ -5,6 +5,101 @@
         "version": "0.1"
     },
     "paths": {
+        "/api/event/{id}": {
+            "get": {
+                "tags": [
+                    "Event"
+                ],
+                "summary": "Display a listing of the resource.",
+                "description": " ",
+                "operationId": "dd3b550f978c7a7a5f833bce68af2243",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id of game match",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Event"
+                ],
+                "summary": "Store a newly created resource in storage.",
+                "description": " ",
+                "operationId": "7b270fcd95e7200ccc20c8c52bd2b1af",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id of match",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id_player": {
+                                        "type": "number"
+                                    },
+                                    "player_squad_number": {
+                                        "type": "number"
+                                    },
+                                    "id_team": {
+                                        "type": "number"
+                                    },
+                                    "id_second_player": {
+                                        "type": "number"
+                                    },
+                                    "type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "goal",
+                                            "foul",
+                                            "yellow-card",
+                                            "second-yellow-card",
+                                            "red-card",
+                                            "subtitution",
+                                            "free-kick",
+                                            "corner",
+                                            "penalty"
+                                        ]
+                                    },
+                                    "minute": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Welcome page",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/game_match": {
             "get": {
                 "tags": [
@@ -259,23 +354,31 @@
                 }
             }
         },
-        "/api/player-match": {
+        "/api/player-match/{id_team_match}": {
             "post": {
                 "tags": [
                     "Player Match"
                 ],
                 "summary": "Store a newly created resource in storage.",
                 "description": "Player match",
-                "operationId": "7a6853c6a44715c1f785ffb525ffceea",
+                "operationId": "b07f053179ffe279bf6c86f5ab5beb1e",
+                "parameters": [
+                    {
+                        "name": "id_team_match",
+                        "in": "path",
+                        "description": "Id of team match",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
                                 "properties": {
                                     "id_player": {
-                                        "type": "integer"
-                                    },
-                                    "id_team_match": {
                                         "type": "integer"
                                     },
                                     "is_sub": {

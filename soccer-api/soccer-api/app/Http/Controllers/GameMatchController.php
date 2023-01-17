@@ -2,15 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Data\Repositories\PlayerMatchRepositoryInterface;
+use App\Data\Repositories\PlayerRepositoryInterface;
+use App\Data\Repositories\TeamMatchRepositoryInterface;
 use App\Models\GameMatch;
 use App\Repositories\GameMatchRepository;
+use App\Repositories\TeamMatchRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class GameMatchController extends Controller
 {
-    public function __construct(protected GameMatchRepository $gameMatchRepository)
+    public function __construct(
+        protected GameMatchRepository $gameMatchRepository,
+        protected TeamMatchRepositoryInterface $teamMatchRepository,
+        protected PlayerRepositoryInterface $playerRepository,
+        protected PlayerMatchRepositoryInterface $playerMatchRepository
+    )
     {
         // TODO:
     }
@@ -26,14 +35,18 @@ class GameMatchController extends Controller
      *     ),
      *     @OA\Response(response="default", description="Welcome page")
      * )
-     * @return Paginator
+     * @return JsonResponse
      */
-    public function index(Request $request): Paginator
+    public function index(Request $request): JsonResponse
     {
         //
         $query = $this->gameMatchRepository
             ->eloquentBuilder()
-            ->with(['home_team:id,name,city', 'away_team:id,name,city', 'home_stats:id,id_team,id_match,goal_scored', 'away_stats:id,id_team,id_match,goal_scored']);
+            ->with([
+                'home_team:id,name,city',
+                'away_team:id,name,city',
+            ])
+            ->select('id', 'id_home', 'id_away', 'start_time', 'stadium');
 
         if ($team = $request->team_id) {
             $query->where('id_home', '=', $team)
@@ -41,7 +54,7 @@ class GameMatchController extends Controller
         }
 
         $query->orderBy('start_time', 'asc');
-        return $query->simplePaginate(10);
+        return $this->sendResponse($query->simplePaginate(10));
     }
 
     /**
@@ -104,7 +117,7 @@ class GameMatchController extends Controller
      */
     public function show(int $id): JsonResponse
     {
-        $match = $this->gameMatchRepository->gameMatchDetailData($id);
+        $match = $this->gameMatchRepository->gameMatchDetailData($id, col: ["id", "id_home", "id_away", "start_time", "stadium", "status"]);
         return $this->sendResponse($match);
     }
 
@@ -134,5 +147,37 @@ class GameMatchController extends Controller
         $match = $this->gameMatchRepository->findOrFail($id);
         $match->delete();
         return $this->deleteSuccess([]);
+    }
+
+    private function playerMatchArray($arr, $idTeam, $idTeamMatch, $isSub) {
+        return array_map(function ($item) use ($idTeam, $idTeamMatch, $isSub) {
+            $player = $this->playerRepository->eloquentBuilder()
+                ->where('squad_number', $item["number"])
+                ->where('id_team', $idTeam)
+                ->first();
+            if (!$player) dd($item);
+            return [
+                "id_player" => $player->id,
+                "position" => $item["position"] ?? $player->detail_position,
+                "is_sub" => $isSub,
+                "id_team_match" => $idTeamMatch
+            ];
+        }, $arr);
+    }
+    public function insertLineUp(Request $request, int $id)
+    {
+        $match = $this->gameMatchRepository->findOrFail($id);
+        $idHomeTeam = $this->teamMatchRepository->eloquentBuilder()->where('id_team', $match['id_home'])->where('id_match', $id)->first();
+        $idAwayTeam = $this->teamMatchRepository->eloquentBuilder()->where('id_team', $match['id_away'])->where('id_match', $id)->first();
+
+        $requestBody = json_decode($request->getContent(), true);
+        $home = $requestBody["home"];
+        $away = $requestBody["away"];
+
+        $homeRequestStarting = $this->playerMatchArray($home["starting"], $idHomeTeam->id_team, $idHomeTeam->id, 0);
+        $homeRequestSub = $this->playerMatchArray($home["substitution"], $idHomeTeam->id_team, $idHomeTeam->id, 1);
+        $awayRequestStarting = $this->playerMatchArray($away["starting"], $idAwayTeam->id_team, $idAwayTeam->id, 0);
+        $awayRequestSub = $this->playerMatchArray($away["substitution"], $idAwayTeam->id_team, $idAwayTeam->id, 1);
+        return $this->createSuccess($this->playerMatchRepository->insertByTeam(array_merge($homeRequestStarting, $homeRequestSub, $awayRequestStarting, $awayRequestSub)));
     }
 }

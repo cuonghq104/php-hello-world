@@ -12,4 +12,10 @@ class PlayerMatchRepository extends BaseRepository implements PlayerMatchReposit
         parent::__construct($playerMatch);
     }
 
+    public function insertByTeam($request): array
+    {
+        return array_map(function($item) {
+            return $this->eloquentBuilder()->create($item);
+        }, $request);
+    }
 }

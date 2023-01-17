@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\GameMatchController;
 use App\Http\Controllers\PlayerMatchController;
 use App\Http\Controllers\TeamController;
@@ -32,4 +33,9 @@ Route::apiResource('team', TeamController::class);
 Route::apiResource('player', PlayerController::class);
 
 Route::apiResource('game_match', GameMatchController::class);
-Route::post('player-match', [PlayerMatchController::class, 'store']);
+Route::post('game_match/{id}/line-up', [GameMatchController::class, 'insertLineUp']);
+
+Route::post('player-match/{id_team_match}', [PlayerMatchController::class, 'store']);
+
+Route::get('event/{id}', [EventController::class, 'index']);
+Route::post('event/{id}', [EventController::class, 'store']);

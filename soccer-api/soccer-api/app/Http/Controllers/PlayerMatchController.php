@@ -32,7 +32,10 @@ class PlayerMatchController extends Controller
      * @return JsonResponse
      * @OA\Post(
      *     tags={"Player Match"},
-     *     path="/api/player-match",
+     *     path="/api/player-match/{id_team_match}",
+     *     @OA\Parameter(name="id_team_match", in="path", description="Id of team match", required=true,
+     *        @OA\Schema(type="integer")
+     *     ),
      *     description="Player match",
      *     @OA\RequestBody(
      *         @OA\MediaType(
@@ -40,10 +43,6 @@ class PlayerMatchController extends Controller
      *             @OA\Schema(
      *                 @OA\Property(
      *                     property="id_player",
-     *                     type="integer"
-     *                 ),
-     *                 @OA\Property(
-     *                     property="id_team_match",
      *                     type="integer"
      *                 ),
      *                 @OA\Property(
@@ -60,10 +59,11 @@ class PlayerMatchController extends Controller
      *     @OA\Response(response="default", description="Player match create response")
      * )
      */
-    public function store(Request $request)
+    public function store(Request $request, int $id_team_match)
     {
         //
-        $data = $request->only(['id_player', 'id_team_match', 'is_sub', 'position']);
+        $data = $request->only(['id_player', 'is_sub', 'position']);
+        $data["id_team_match"] = $id_team_match;
         $playerMatch = $this->playerMatchRepository->create($data);
         return $this->createSuccess($playerMatch);
     }
@@ -101,4 +101,5 @@ class PlayerMatchController extends Controller
     {
         //
     }
+
 }

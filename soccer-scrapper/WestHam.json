@@ -1,0 +1,218 @@
+[
+  {
+    "squad_number": 13,
+    "name": "Alphonse Areola",
+    "nationality": "France",
+    "date_of_birth": "1993-02-27",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 5
+  },
+  {
+    "squad_number": 1,
+    "name": "Lukasz Fabianski",
+    "nationality": "Poland",
+    "date_of_birth": "1985-04-18",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 5
+  },
+  {
+    "squad_number": 35,
+    "name": "Darren Randolph",
+    "nationality": "Ireland",
+    "date_of_birth": "1987-05-12",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 5
+  },
+  {
+    "squad_number": 4,
+    "name": "Kurt Zouma",
+    "nationality": "France",
+    "date_of_birth": "1994-10-27",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 27,
+    "name": "Nayef Aguerd",
+    "nationality": "Morocco",
+    "date_of_birth": "1996-03-30",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 24,
+    "name": "Thilo Kehrer",
+    "nationality": "Germany",
+    "date_of_birth": "1996-09-21",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 15,
+    "name": "Craig Dawson",
+    "nationality": "England",
+    "date_of_birth": "1990-05-06",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 21,
+    "name": "Angelo Ogbonna",
+    "nationality": "Italy",
+    "date_of_birth": "1988-05-23",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 33,
+    "name": "Emerson",
+    "nationality": "Italy",
+    "date_of_birth": "1994-08-03",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 3,
+    "name": "Aaron Cresswell",
+    "nationality": "England",
+    "date_of_birth": "1989-12-15",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 2,
+    "name": "Ben Johnson",
+    "nationality": "England",
+    "date_of_birth": "2000-01-24",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 5,
+    "name": "Vladimir Coufal",
+    "nationality": "Czech Republic",
+    "date_of_birth": "1992-08-22",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 41,
+    "name": "Declan Rice",
+    "nationality": "England",
+    "date_of_birth": "1999-01-14",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 28,
+    "name": "Tomas Soucek",
+    "nationality": "Czech Republic",
+    "date_of_birth": "1995-02-27",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 32,
+    "name": "Conor Coventry",
+    "nationality": "Ireland",
+    "date_of_birth": "2000-03-25",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 12,
+    "name": "Flynn Downes",
+    "nationality": "England",
+    "date_of_birth": "1999-01-20",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 11,
+    "name": "Lucas Paqueta",
+    "nationality": "Brazil",
+    "date_of_birth": "1997-08-27",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 8,
+    "name": "Pablo Fornals",
+    "nationality": "Spain",
+    "date_of_birth": "1996-02-22",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 10,
+    "name": "Manuel Lanzini",
+    "nationality": "Argentina",
+    "date_of_birth": "1993-02-15",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 22,
+    "name": "Said Benrahma",
+    "nationality": "Algeria",
+    "date_of_birth": "1995-08-10",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 14,
+    "name": "Maxwel Cornet",
+    "nationality": "Cote d'Ivoire",
+    "date_of_birth": "1996-09-27",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 20,
+    "name": "Jarrod Bowen",
+    "nationality": "England",
+    "date_of_birth": "1996-12-20",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 7,
+    "name": "Gianluca Scamacca",
+    "nationality": "Italy",
+    "date_of_birth": "1999-01-01",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 5
+  },
+  {
+    "squad_number": 9,
+    "name": "Michail Antonio",
+    "nationality": "Jamaica",
+    "date_of_birth": "1990-03-28",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 5
+  }
+]

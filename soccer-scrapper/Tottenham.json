@@ -1,0 +1,236 @@
+[
+  {
+    "squad_number": 1,
+    "name": "Hugo Lloris",
+    "nationality": "France",
+    "date_of_birth": "1986-12-26",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 5
+  },
+  {
+    "squad_number": 20,
+    "name": "Fraser Forster",
+    "nationality": "England",
+    "date_of_birth": "1988-03-17",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 5
+  },
+  {
+    "squad_number": null,
+    "name": "Alfie Whiteman",
+    "nationality": "England",
+    "date_of_birth": "1998-10-02",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 5
+  },
+  {
+    "squad_number": 40,
+    "name": "Brandon Austin",
+    "nationality": "England",
+    "date_of_birth": "1999-01-08",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 5
+  },
+  {
+    "squad_number": 17,
+    "name": "Cristian Romero",
+    "nationality": "Argentina",
+    "date_of_birth": "1998-04-27",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 15,
+    "name": "Eric Dier",
+    "nationality": "England",
+    "date_of_birth": "1994-01-15",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 6,
+    "name": "Davinson Sanchez",
+    "nationality": "Colombia",
+    "date_of_birth": "1996-06-12",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 34,
+    "name": "Clement Lenglet",
+    "nationality": "France",
+    "date_of_birth": "1995-06-17",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 25,
+    "name": "Japhet Tanganga",
+    "nationality": "England",
+    "date_of_birth": "1999-03-31",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 33,
+    "name": "Ben Davies",
+    "nationality": "Wales",
+    "date_of_birth": "1993-04-24",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 12,
+    "name": "Emerson Royal",
+    "nationality": "Brazil",
+    "date_of_birth": "1999-01-14",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 24,
+    "name": "Djed Spence",
+    "nationality": "England",
+    "date_of_birth": "2000-08-09",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 2,
+    "name": "Matt Doherty",
+    "nationality": "Ireland",
+    "date_of_birth": "1992-01-16",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 5
+  },
+  {
+    "squad_number": 4,
+    "name": "Oliver Skipp",
+    "nationality": "England",
+    "date_of_birth": "2000-09-16",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 5,
+    "name": "Pierre-Emile Hojbjerg",
+    "nationality": "Denmark",
+    "date_of_birth": "1995-08-05",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 30,
+    "name": "Rodrigo Bentancur",
+    "nationality": "Uruguay",
+    "date_of_birth": "1997-06-25",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 38,
+    "name": "Yves Bissouma",
+    "nationality": "Mali",
+    "date_of_birth": "1996-08-30",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 29,
+    "name": "Pape Matar Sarr",
+    "nationality": "Senegal",
+    "date_of_birth": "2002-09-14",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 19,
+    "name": "Ryan Sessegnon",
+    "nationality": "England",
+    "date_of_birth": "2000-05-18",
+    "position": "Midfield",
+    "detail_position": "LM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 14,
+    "name": "Ivan Perisic",
+    "nationality": "Croatia",
+    "date_of_birth": "1989-02-02",
+    "position": "Midfield",
+    "detail_position": "LM",
+    "id_team": 5
+  },
+  {
+    "squad_number": 7,
+    "name": "Heung-min Son",
+    "nationality": "Korea, South",
+    "date_of_birth": "1992-07-08",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 9,
+    "name": "Richarlison",
+    "nationality": "Brazil",
+    "date_of_birth": "1997-05-10",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 11,
+    "name": "Bryan Gil",
+    "nationality": "Spain",
+    "date_of_birth": "2001-02-11",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 21,
+    "name": "Dejan Kulusevski",
+    "nationality": "Sweden",
+    "date_of_birth": "2000-04-25",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 27,
+    "name": "Lucas Moura",
+    "nationality": "Brazil",
+    "date_of_birth": "1992-08-13",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 5
+  },
+  {
+    "squad_number": 10,
+    "name": "Harry Kane",
+    "nationality": "England",
+    "date_of_birth": "1993-07-28",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 5
+  }
+]

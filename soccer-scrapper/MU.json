@@ -1,0 +1,254 @@
+[
+  {
+    "squad_number": 1,
+    "name": "David de Gea",
+    "nationality": "Spain",
+    "date_of_birth": "1990-11-07",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 8
+  },
+  {
+    "squad_number": 31,
+    "name": "Jack Butland",
+    "nationality": "England",
+    "date_of_birth": "1993-03-10",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 8
+  },
+  {
+    "squad_number": 22,
+    "name": "Tom Heaton",
+    "nationality": "England",
+    "date_of_birth": "1986-04-15",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 8
+  },
+  {
+    "squad_number": 6,
+    "name": "Lisandro Martinez",
+    "nationality": "Argentina",
+    "date_of_birth": "1998-01-18",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 19,
+    "name": "Raphael Varane",
+    "nationality": "France",
+    "date_of_birth": "1993-04-25",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 5,
+    "name": "Harry Maguire",
+    "nationality": "England",
+    "date_of_birth": "1993-03-05",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 2,
+    "name": "Victor Lindelof",
+    "nationality": "Sweden",
+    "date_of_birth": "1994-07-17",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 38,
+    "name": "Axel Tuanzebe",
+    "nationality": "England",
+    "date_of_birth": "1997-11-14",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 4,
+    "name": "Phil Jones",
+    "nationality": "England",
+    "date_of_birth": "1992-02-21",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 23,
+    "name": "Luke Shaw",
+    "nationality": "England",
+    "date_of_birth": "1995-07-12",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 12,
+    "name": "Tyrell Malacia",
+    "nationality": "Netherlands",
+    "date_of_birth": "1999-08-17",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 33,
+    "name": "Brandon Williams",
+    "nationality": "England",
+    "date_of_birth": "2000-09-03",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 20,
+    "name": "Diogo Dalot",
+    "nationality": "Portugal",
+    "date_of_birth": "1999-03-18",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 29,
+    "name": "Aaron Wan-Bissaka",
+    "nationality": "England",
+    "date_of_birth": "1997-11-26",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 8
+  },
+  {
+    "squad_number": 18,
+    "name": "Casemiro",
+    "nationality": "Brazil",
+    "date_of_birth": "1992-02-23",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 8
+  },
+  {
+    "squad_number": 39,
+    "name": "Scott McTominay",
+    "nationality": "Scotland",
+    "date_of_birth": "1996-12-08",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 8
+  },
+  {
+    "squad_number": 17,
+    "name": "Fred",
+    "nationality": "Brazil",
+    "date_of_birth": "1993-03-05",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 8
+  },
+  {
+    "squad_number": 34,
+    "name": "Donny van de Beek",
+    "nationality": "Netherlands",
+    "date_of_birth": "1997-04-18",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 8
+  },
+  {
+    "squad_number": 8,
+    "name": "Bruno Fernandes",
+    "nationality": "Portugal",
+    "date_of_birth": "1994-09-08",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 8
+  },
+  {
+    "squad_number": 14,
+    "name": "Christian Eriksen",
+    "nationality": "Denmark",
+    "date_of_birth": "1992-02-14",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 8
+  },
+  {
+    "squad_number": 25,
+    "name": "Jadon Sancho",
+    "nationality": "England",
+    "date_of_birth": "2000-03-25",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 8
+  },
+  {
+    "squad_number": 10,
+    "name": "Marcus Rashford",
+    "nationality": "England",
+    "date_of_birth": "1997-10-31",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 8
+  },
+  {
+    "squad_number": 36,
+    "name": "Anthony Elanga",
+    "nationality": "Sweden",
+    "date_of_birth": "2002-04-27",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 8
+  },
+  {
+    "squad_number": 49,
+    "name": "Alejandro Garnacho",
+    "nationality": "Argentina",
+    "date_of_birth": "2004-07-01",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 8
+  },
+  {
+    "squad_number": 21,
+    "name": "Antony",
+    "nationality": "Brazil",
+    "date_of_birth": "2000-02-24",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 8
+  },
+  {
+    "squad_number": 28,
+    "name": "Facundo Pellistri",
+    "nationality": "Uruguay",
+    "date_of_birth": "2001-12-20",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 8
+  },
+  {
+    "squad_number": 11,
+    "name": "Mason Greenwood",
+    "nationality": "England",
+    "date_of_birth": "2001-10-01",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 8
+  },
+  {
+    "squad_number": 9,
+    "name": "Anthony Martial",
+    "nationality": "France",
+    "date_of_birth": "1995-12-05",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 8
+  }
+]

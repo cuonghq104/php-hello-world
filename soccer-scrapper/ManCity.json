@@ -1,0 +1,209 @@
+[
+  {
+    "squad_number": 31,
+    "name": "Ederson",
+    "nationality": "Brazil",
+    "date_of_birth": "1993-08-17",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 7
+  },
+  {
+    "squad_number": 18,
+    "name": "Stefan Ortega",
+    "nationality": "Germany",
+    "date_of_birth": "1992-11-06",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 7
+  },
+  {
+    "squad_number": 33,
+    "name": "Scott Carson",
+    "nationality": "England",
+    "date_of_birth": "1985-09-03",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 7
+  },
+  {
+    "squad_number": 3,
+    "name": "Ruben Dias",
+    "nationality": "Portugal",
+    "date_of_birth": "1997-05-14",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 14,
+    "name": "Aymeric Laporte",
+    "nationality": "Spain",
+    "date_of_birth": "1994-05-27",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 5,
+    "name": "John Stones",
+    "nationality": "England",
+    "date_of_birth": "1994-05-28",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 6,
+    "name": "Nathan Ake",
+    "nationality": "Netherlands",
+    "date_of_birth": "1995-02-18",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 25,
+    "name": "Manuel Akanji",
+    "nationality": "Switzerland",
+    "date_of_birth": "1995-07-19",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 21,
+    "name": "Sergio Gomez",
+    "nationality": "Spain",
+    "date_of_birth": "2000-09-04",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 22,
+    "name": "Benjamin Mendy",
+    "nationality": "France",
+    "date_of_birth": "1994-07-17",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 7,
+    "name": "Joao Cancelo",
+    "nationality": "Portugal",
+    "date_of_birth": "1994-05-27",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 2,
+    "name": "Kyle Walker",
+    "nationality": "England",
+    "date_of_birth": "1990-05-28",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 7
+  },
+  {
+    "squad_number": 16,
+    "name": "Rodri",
+    "nationality": "Spain",
+    "date_of_birth": "1996-06-22",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 7
+  },
+  {
+    "squad_number": 4,
+    "name": "Kalvin Phillips",
+    "nationality": "England",
+    "date_of_birth": "1995-12-02",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 7
+  },
+  {
+    "squad_number": 47,
+    "name": "Phil Foden",
+    "nationality": "England",
+    "date_of_birth": "2000-05-28",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 7
+  },
+  {
+    "squad_number": 8,
+    "name": "Ilkay Gundogan",
+    "nationality": "Germany",
+    "date_of_birth": "1990-10-24",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 7
+  },
+  {
+    "squad_number": 17,
+    "name": "Kevin De Bruyne",
+    "nationality": "Belgium",
+    "date_of_birth": "1991-06-28",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 7
+  },
+  {
+    "squad_number": 20,
+    "name": "Bernardo Silva",
+    "nationality": "Portugal",
+    "date_of_birth": "1994-08-10",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 7
+  },
+  {
+    "squad_number": 80,
+    "name": "Cole Palmer",
+    "nationality": "England",
+    "date_of_birth": "2002-05-06",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 7
+  },
+  {
+    "squad_number": 10,
+    "name": "Jack Grealish",
+    "nationality": "England",
+    "date_of_birth": "1995-09-10",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 7
+  },
+  {
+    "squad_number": 26,
+    "name": "Riyad Mahrez",
+    "nationality": "Algeria",
+    "date_of_birth": "1991-02-21",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 7
+  },
+  {
+    "squad_number": 9,
+    "name": "Erling Haaland",
+    "nationality": "Norway",
+    "date_of_birth": "2000-07-21",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 7
+  },
+  {
+    "squad_number": 19,
+    "name": "Julian Alvarez",
+    "nationality": "Argentina",
+    "date_of_birth": "2000-01-31",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 7
+  }
+]

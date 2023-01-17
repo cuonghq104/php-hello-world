@@ -1,0 +1,209 @@
+[
+  {
+    "squad_number": 1,
+    "name": "Aaron Ramsdale",
+    "nationality": "England",
+    "date_of_birth": "1998-05-14",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 1
+  },
+  {
+    "squad_number": 30,
+    "name": "Matt Turner",
+    "nationality": "United States",
+    "date_of_birth": "1994-06-24",
+    "position": "Goalkeeper",
+    "detail_position": "GK",
+    "id_team": 1
+  },
+  {
+    "squad_number": 12,
+    "name": "William Saliba",
+    "nationality": "France",
+    "date_of_birth": "2001-03-24",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 4,
+    "name": "Ben White",
+    "nationality": "England",
+    "date_of_birth": "1997-10-08",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 6,
+    "name": "Gabriel Magalhaes",
+    "nationality": "Brazil",
+    "date_of_birth": "1997-12-19",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 16,
+    "name": "Rob Holding",
+    "nationality": "England",
+    "date_of_birth": "1995-09-20",
+    "position": "Defender",
+    "detail_position": "CB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 35,
+    "name": "Oleksandr Zinchenko",
+    "nationality": "Ukraine",
+    "date_of_birth": "1996-12-15",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 3,
+    "name": "Kieran Tierney",
+    "nationality": "Scotland",
+    "date_of_birth": "1997-06-05",
+    "position": "Defender",
+    "detail_position": "LB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 18,
+    "name": "Takehiro Tomiyasu",
+    "nationality": "Japan",
+    "date_of_birth": "1998-11-05",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 17,
+    "name": "Cedric Soares",
+    "nationality": "Portugal",
+    "date_of_birth": "1991-08-31",
+    "position": "Defender",
+    "detail_position": "RB",
+    "id_team": 1
+  },
+  {
+    "squad_number": 5,
+    "name": "Thomas Partey",
+    "nationality": "Ghana",
+    "date_of_birth": "1993-06-13",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 34,
+    "name": "Granit Xhaka",
+    "nationality": "Switzerland",
+    "date_of_birth": "1992-09-27",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 25,
+    "name": "Mohamed Elneny",
+    "nationality": "Egypt",
+    "date_of_birth": "1992-07-11",
+    "position": "Midfield",
+    "detail_position": "DM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 23,
+    "name": "Albert Sambi Lokonga",
+    "nationality": "Belgium",
+    "date_of_birth": "1999-10-22",
+    "position": "Midfield",
+    "detail_position": "CM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 7,
+    "name": "Bukayo Saka",
+    "nationality": "England",
+    "date_of_birth": "2001-09-05",
+    "position": "Midfield",
+    "detail_position": "RM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 8,
+    "name": "Martin Ødegaard",
+    "nationality": "Norway",
+    "date_of_birth": "1998-12-17",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 10,
+    "name": "Emile Smith Rowe",
+    "nationality": "England",
+    "date_of_birth": "2000-07-28",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 21,
+    "name": "Fabio Vieira",
+    "nationality": "Portugal",
+    "date_of_birth": "2000-05-30",
+    "position": "Midfield",
+    "detail_position": "AM",
+    "id_team": 1
+  },
+  {
+    "squad_number": 11,
+    "name": "Gabriel Martinelli",
+    "nationality": "Brazil",
+    "date_of_birth": "2001-06-18",
+    "position": "Attack",
+    "detail_position": "LW",
+    "id_team": 1
+  },
+  {
+    "squad_number": 27,
+    "name": "Marquinhos",
+    "nationality": "Brazil",
+    "date_of_birth": "2003-04-07",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 1
+  },
+  {
+    "squad_number": 24,
+    "name": "Reiss Nelson",
+    "nationality": "England",
+    "date_of_birth": "1999-12-10",
+    "position": "Attack",
+    "detail_position": "RW",
+    "id_team": 1
+  },
+  {
+    "squad_number": 9,
+    "name": "Gabriel Jesus",
+    "nationality": "Brazil",
+    "date_of_birth": "1997-04-03",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 1
+  },
+  {
+    "squad_number": 14,
+    "name": "Eddie Nketiah",
+    "nationality": "England",
+    "date_of_birth": "1999-05-30",
+    "position": "Attack",
+    "detail_position": "CF",
+    "id_team": 1
+  }
+]
